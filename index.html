@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.js.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/main.js" type='module' defer></script>
+    <title>Buscando CEP</title>
+</head>
+<body>
+
+    <header>
+        <div class="logomarca">
+            <div class="logo">
+                <img src="img/local.png" />
+            </div>
+            <div class="title-header">
+                <h1>Busca CEP</h1>
+            </div>
+
+        </div><!--logomarca--> 
+        
+        <div class="TempSmart">
+            <div class="Smart">
+                <div class="element" id="hours">hora:minutos:segundos</div>
+                <div class="line">
+                    <div class="element" id="date"></div>
+                    <div class="week-day" id="week-day">Dia da semana</div>
+                    <div class="day" id="day">dia</div>
+                    <div class="month-year" id="month-year">mês e ano</div>            
+                </div><!--line-->       
+                <div id="temperatura">
+                    <h1 class="city"></h1>
+                    <h2>🌡<span id="temp"></span>°C 💧<span id='umidad'></span>%</h2>
+                </div>         
+            </div><!--Smart-->
+        </div><!--TempSmart-->
+
+    </header>
+
+    <main class="container">
+        <h1 class="title">CADASTRO</h1>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="nome" required>
+                <label for="nome">Nome:</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="email" required>
+                <label for="email">E-mail:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="cep" required>
+                <label for="cep">CEP:</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="endereco" required>
+                <label for="endereco">Endereço:</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="numero" required>
+                <label for="numero">Número:</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="bairro" required>
+                <label for="bairro">Bairro:</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="cidade" required>
+                <label for="cidade">Cidade:</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="estado" required>
+                <label for="estado">Estado:</label>
+            </div>
+        </div>
+        <div class="row">
+            <button>Salvar</button>
+        </div>
+    </main>
+
+    <footer>        
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Juarez Santos &#169 2023</p>        
+    </footer>
+    
+</body>
+</html>
